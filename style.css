@@ -34,6 +34,10 @@ body
 	text-align: center;
 	border-top: 1px solid #751b1b;
 	border-bottom: 1px solid #751b1b;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	z-index: 100;
 }
 
 .content
@@ -50,16 +54,6 @@ body
 	background-color: #222222;
 	padding: 30px;
 }
-
-.sticky
-{
-	width: 100%;
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 100;
-}
-
 ol
 {
 	padding: 0;

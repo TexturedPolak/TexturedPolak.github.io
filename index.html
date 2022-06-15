@@ -11,7 +11,7 @@
 	<meta name="keywords" content="github, texturedpolak" />
 	
 	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>	
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -34,14 +34,9 @@
 						<li><a href="#">Pobierz</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Inne programy</a>
+				<li><a href="#">Różne</a>
 					<ul>
-						<li><a href="#">Kolekcja .bat</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Inne gry</a>
-					<ul>
-						<li><a href="#">Kolekcja .bat</a></li>
+						<li><a href="#">Coś napewno</a></li>
 					</ul>
 				</li>
 				<li><a href="#">Obecne Projekty</a>
@@ -49,7 +44,6 @@
 						<li><a href="#">Nic :)</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Archiwum X</a></li>
 				<li><a href="#">Kontakt</a></li>
 			</ol>
 		
@@ -68,32 +62,5 @@
 		</div>
 		<div class="footer">TexturedPolak &copy; 2022-2022 Discord: TexturedPolak#8009</div>
 	</div>
-	
-	<script src="jquery-1.11.3.min.js"></script>
-	
-	<script>
-
-	$(document).ready(function() {
-	var NavY = $('.nav').offset().top;
-	 
-	var stickyNav = function(){
-	var ScrollY = $(window).scrollTop();
-		  
-	if (ScrollY > NavY) { 
-		$('.nav').addClass('sticky');
-	} else {
-		$('.nav').removeClass('sticky'); 
-	}
-	};
-	 
-	stickyNav();
-	 
-	$(window).scroll(function() {
-		stickyNav();
-	});
-	});
-	
-</script>
-	
 </body>
 </html>
