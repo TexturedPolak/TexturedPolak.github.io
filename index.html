@@ -1,24 +1,32 @@
 <!DOCTYPE HTML>
 <html lang="pl">
+<!-- Jak to widzisz to super!! Tutaj poruszę parę spraw -->
+<!-- Stronka pójdzie na każdym sprzęcie praktycznie!! -->
+<!-- JavaScript jest wielce zalecany jak nie wymagany -->
+<!-- Czcionka "Lato" to robota niejakiego Łukasza Dziedzica -->
+<!-- Reszta strony zrobiona w 100% przez człowieka pod pseudonimem TexturedPolak z pomocą tutoriali na YT -->
+<!-- Kod zródłowy pobierzesz na moim githubie ;) -->
 <head>
-
 	<meta charset="utf-8" />
+	<!-- Tak, obsługa Internet Explorer w 2022 :). Ale z JS'sem sobie chyba nie poradzi xD -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	
+	<!-- Tytuł strony itp. -->
 	<title>TexturedPolak's Website</title>
-	
 	<meta name="description" content="Takie tam..." />
 	<meta name="keywords" content="github, texturedpolak" />
-	
+	<!-- Ścieszka do CSS'sa -->
 	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<!-- Czcionki -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
 	<div class="wrapper">
+		<!-- Górny pasek z napisem "TexturedPolak" -->
 		<div class="header">
-		
 			<div class="logo">
 				<img src="logo.png" style="float: left; border-radius: 50%; margin-right: 25px;
 				"/>
@@ -26,6 +34,7 @@
 				<div style="clear:both;"></div>
 			</div>
 		</div>
+		<!-- Pasek Nawigacyjny -->
 		<div class="nav">
 			<ol>
 				<li><a href="#">Strona główna</a></li>
@@ -35,9 +44,9 @@
 						<li><a href="#">Pobierz</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Różne</a>
+				<li><a href="#linux">Kącik Linuxowy</a>
 					<ul>
-						<li><a href="#">Coś napewno</a></li>
+						<li><a href="#linux/podstawy-podstaw">Podstawy Podstaw</a></li>
 					</ul>
 				</li>
 				<li><a href="#projekty">Obecne Projekty</a>
@@ -45,24 +54,32 @@
 						<li><a href="#projekty/nic">Nic :)</a></li>
 					</ul>
 				</li>
-				<li><a href="#kontakt">Kontakt</a></li>
+				<li><a href="https://github.com/TexturedPolak">Github</a></li>
 			</ol>
 		
 		</div>
 		<!-- Kontener -->
 		<div class="content">
+			<!-- Powiadomienie o braku JavaScriptu -->
 			<div class="page js-alert" id="js-alert">
-				<p> Aby zobaczyc 100% zawartosci strony wlacz JavaScript w swojej przegladarce!!!! </p>
+				<p> Aby zobaczyć 100% zawartoćci strony włącz JavaScript w swojej przegladarce!!!! </p>
 			</div>
+			<!-- Strona Domowa -->
 			<div class="page home" id="home">
-				<p>Strona glowna... Tylko to....</p>
+				<p>Strona glówna... Tylko to....</p>
 			</div>
-			<div class="page kontakt is-hidden" id="kontakt">
-				<p> Kontakt! </p>
+			<!-- Nic to nic :) -->
+			<div class="page is-hidden" id="projekty/nic">
+				<p> NIC TO NIC !!! </p>
+			</div>
+			<div class="page is-hidden" id="projekty">
+				<p> Obecnie nie jestem w trakcie żadnego projektu, no chyba że ta stronka :) </p>
 			</div>
 		</div>
+		<!-- Stopka -->
 		<div class="footer">TexturedPolak &copy; 2022-2022 Discord: TexturedPolak#8009</div>
 	</div>
+	<!-- Skrypt do zarządania wyświetlaniem podstron -->
 	<script>
 		document.getElementById("js-alert").classList.add("is-hidden");
 		window.addEventListener("hashchange", function(){
