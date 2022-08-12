@@ -2,10 +2,11 @@ body
 {
 	background-color: #303030;
 	color: #ffffff;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif; /* Podziękowanie dla Łukasza Dziedzica za tą czcionkę */
 	font-size: 20px;
 	margin: 0 !important;
 }
+/* Klasa do ukrywania niepotrzebnej zawartości */
 .is-hidden
 {
 	display: none;
@@ -14,13 +15,13 @@ body
 {
 	width: 100%;
 }
-
+/* Nagłówek strony */
 .header
 {
 	width:100%;
 	padding: 40px 0;
 }
-
+/* Logo */
 .logo
 {
 	width: 450px;
@@ -28,7 +29,7 @@ body
 	margin-left: auto;
 	margin-right: auto;
 }
-
+/* Tło paska nawigacyjnego */
 .nav
 { 
 	width: 100%;
@@ -37,12 +38,12 @@ body
 	text-align: center;
 	border-top: 1px solid #751b1b;
 	border-bottom: 1px solid #751b1b;
-	position: -webkit-sticky; /* Safari */
+	position: -webkit-sticky; /* Obsługa Safari */
 	position: sticky;
 	top: 0;
 	z-index: 100;
 }
-
+/* Główny kontener */
 .content
 {
 	width: 70%;
@@ -55,12 +56,14 @@ body
 {
 	text-align: center;
 }
+/* Stopka */
 .footer
 {
 	text-align: center;
 	background-color: #222222;
 	padding: 30px;
 }
+/* Pasek Nawigacyjny */
 ol
 {
 	padding: 0;
@@ -132,4 +135,8 @@ ol > li > ul > li:hover
 ol > li > ul > li:hover > a
 {
 	color: #451717;
+}
+/* Zmiana wyglądu hiperłącza */
+a{
+	color: #c34f4f;
 }

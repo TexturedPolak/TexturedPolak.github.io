@@ -21,14 +21,12 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-
 	<div class="wrapper">
 		<!-- Górny pasek z napisem "TexturedPolak" -->
 		<div class="header">
 			<div class="logo">
-				<img src="logo.png" style="float: left; border-radius: 50%; margin-right: 25px;
+				<img src="logo.png" style="float: left; border-radius: 50%; margin-right: 15px;
 				"/>
 				Textured<span style="color: #c34f4f">Polak</span>
 				<div style="clear:both;"></div>
@@ -38,15 +36,16 @@
 		<div class="nav">
 			<ol>
 				<li><a href="#">Strona główna</a></li>
-				<li><a href="#">RPG Clicker</a>
+				<li><a href="#rpgclicker">RPG Clicker</a>
 					<ul>
-						<li><a href="#">O grze</a></li>
-						<li><a href="#">Pobierz</a></li>
+						<li><a href="#rpgclicker">O grze</a></li>
+						<li><a href="#rpgclicker">Pobierz</a></li>
 					</ul>
 				</li>
 				<li><a href="#linux">Kącik Linuxowy</a>
 					<ul>
-						<li><a href="#linux/podstawy-podstaw">Podstawy Podstaw</a></li>
+						<li><a href="#linux/o_linuxie">O Linuxie</a></li>
+						<li><a href="#linux/podstawy_podstaw">Podstawy Podstaw</a></li>
 					</ul>
 				</li>
 				<li><a href="#projekty">Obecne Projekty</a>
@@ -56,7 +55,6 @@
 				</li>
 				<li><a href="https://github.com/TexturedPolak">Github</a></li>
 			</ol>
-		
 		</div>
 		<!-- Kontener -->
 		<div class="content">
@@ -66,9 +64,10 @@
 			</div>
 			<!-- Strona Domowa -->
 			<div class="page home" id="home">
-				<p>Strona glówna... Tylko to....</p>
+				<span style="text-align: center;"><h2>Witaj na stronie!</h2></span>
+				<p>Na tej stronie dowiesz się więcej o projekcie <a href="#rpgclicker">RPG CLICKER</a></p>
+				<p>Dowiesz się także sporo informacji na temat <a href="#linux">Linuxa</a></p>
 			</div>
-			
 			<!-- Projekty -->
 			<div class="page is-hidden" id="projekty">
 				<p> Obecnie nie jestem w trakcie żadnego projektu, no chyba że ta stronka :) </p>
@@ -76,6 +75,38 @@
 				<div class="page is-hidden" id="nic">
 					<p> Nic to nic :) </p>
 				</div>
+			<!-- RPG Clicker -->
+			<div class="page is-hidden" id="rpgclicker">
+				<h2>RPG CLICKER</h2>
+				<p> RPG CLICKER to prosty clicker nie mający niestety elementów rpg xD.</p>
+				<p> Projekt był realizowany z użytkownikami discorda, moimi kolegami: aSzumiaczek#2587, Fracix#0533, MMP#7899. </p>
+				<p> Projekt został porzucony ze względu na brak motywacji :( </p>
+				<p> Gra do pobrania na <a href="https://github.com/TexturedPolak">TEJ STRONIE</a></p>
+			</div>
+			<!-- Linux, strona główna -->
+			<div class="page is-hidden" id="linux">
+				<span style="text-aligh: center;"><h2> Linux - Pełen Tutorial</h2></span>
+				<li><a href="#o_linuxie">O Linuxie</a></li>
+				<li><a href="#podstawy_podstaw">Podstawy Podstaw czyli instalacja Ubuntu</a></li>
+				<p><span style="color: #c34f4f;">Więcej informacji wkrótce!</span></p> 
+			</div>
+			<!-- Linux, O Linuxie -->
+			<div class="page is-hidden" id="o_linuxie">
+				<h2 style="text-align: center;">O Linuxie</h2>
+					<p>Linux jest otwartoźródłowym systemem operacyjnym, tworzonym przez jego społeczność.</p>
+				<h2>Dlaczego warto?</h2>
+					<p><li>Linux jest dostępny za darmo.</li></p>
+					<p><li>Niskie wymagania systemowe (pójdzie na każdym złomie).</li></p>
+					<p><li>Idealny system dla początkujących programistów.</li></p>
+					<p><li>Idealny system do pracy biurowej, oraz korzystania z internetu.</li></p>
+					<p><li>Najczęściej używany system w serwerowniach.</li></p>
+				<h2>Dla kogo nie nadaję się?</h2>
+					<p><li>Dla osób używający specjalistycznych programów dostępnych tylko na Windowsa m.in Programy od Adobe w tym np. Photoshop.</li></p>
+					<p><li>Dla osób nie radzący sobie z obsługą Windowsa.</li></p>
+					<p><li>Dla osób które lubią sobie pograć ;) Na Linuxie nie każda gra się uruchomi.</li></p>
+				<br></br>
+				<p style="text-align: right;">Zdecydowany? Sprawdź <a href="#podstawy_postaw">następną stronę</a></p>
+			</div>
 		</div>
 		<!-- Stopka -->
 		<div class="footer">TexturedPolak &copy; 2022-2022 Discord: TexturedPolak#8009</div>
