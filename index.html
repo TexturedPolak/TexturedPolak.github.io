@@ -68,29 +68,19 @@
 			<div class="page home" id="home">
 				<p>Strona glówna... Tylko to....</p>
 			</div>
-			<!-- Nic to nic :) -->
-			<div class="page is-hidden" id="projekty/nic">
-				<p> NIC TO NIC !!! </p>
-			</div>
+			
+			<!-- Projekty -->
 			<div class="page is-hidden" id="projekty">
 				<p> Obecnie nie jestem w trakcie żadnego projektu, no chyba że ta stronka :) </p>
 			</div>
+				<div class="page is-hidden" id="nic">
+					<p> Nic to nic :) </p>
+				</div>
 		</div>
 		<!-- Stopka -->
 		<div class="footer">TexturedPolak &copy; 2022-2022 Discord: TexturedPolak#8009</div>
 	</div>
 	<!-- Skrypt do zarządania wyświetlaniem podstron -->
-	<script>
-		document.getElementById("js-alert").classList.add("is-hidden");
-		window.addEventListener("hashchange", function(){
-			const hash = window.location.hash.replace("#","") || "home"
-			const readyHash = hash.split("/")
-		
-			document.querySelectorAll(".page").forEach(function($e){
-				$e.classList.add("is-hidden")
-			})
-			document.getElementById(readyHash).classList.remove("is-hidden")
-		});
-	</script>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
